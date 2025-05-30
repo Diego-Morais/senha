@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Senha - E-book por Izidy Râmel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+        
+        :root {
+            --beige: #d2c0a7;
+            --dark-beige: #b8a089;
+            --gray: #4a4a4a;
+            --light-gray: #f5f5f5;
+            --green: #2e8b57;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(90deg, #4a4a4a 0%, rgba(74, 74, 74, 0.7) 70%, rgba(74, 74, 74, 0.4) 100%);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-gradient {
+                background: linear-gradient(180deg, #4a4a4a 0%, rgba(74, 74, 74, 0.7) 70%, rgba(74, 74, 74, 0.4) 100%);
+            }
+        }
+        
+        .btn-primary {
+            background-color: var(--green);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #236b43;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .feature-item {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            transform: translateX(5px);
+        }
+        
+        /* Custom animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+    </style>
+</head>
+
+
+<body class="bg-white">
+    <!-- Header -->
+    <header class="w-full py-4 px-6 bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold text-[#4a4a4a]"></h1>
+            
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <!-- Text Content -->
+                <div class="w-full md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                    <h1 class="text-5xl md:text-6xl font-bold text-[#d2c0a7] animate-fadeIn">A Senha</h1>
+                    <h2 class="text-xl md:text-2xl mt-4 text-white animate-fadeIn delay-100">
+                        Você está cansado(a) de viver apagando incêndios no seu negócio?
+                    </h2>
+                    <p class="text-lg mt-6 text-[#d2c0a7] animate-fadeIn delay-200">
+                        Este ebook é um passo a passo direto, sem enrolação — um verdadeiro guia prático para destravar e fazer o seu negócio crescer!
+                    </p>
+                    <button class="btn-primary text-lg px-8 py-3 rounded-md font-medium mt-8 animate-fadeIn delay-300">
+                        Quero a Senha
+                    </button>
+                </div>
+                
+                <!-- Book Cover -->
+                <div class="w-full md:w-1/2 flex justify-center md:justify-end animate-fadeIn delay-400">
+                    <div class="relative w-64 md:w-80">
+                        <!-- SVG Book Cover -->
+                        <img src="imagens/cadeado.png" width="1500px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-[#f5f5f5] rounded-lg p-6 shadow-md">
+                <div class="aspect-w-16 aspect-h-9">
+                    <!-- Video Placeholder -->
+                    <div class="w-full h-0 pb-[56.25%] relative bg-[#4a4a4a] rounded-lg">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-white text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <p class="mt-4">Apresentação do E-book "A Senha"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <button class="btn-primary text-lg px-8 py-3 rounded-md font-medium">
+                        Quero a Senha
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-[#f5f5f5]">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#4a4a4a]">
+                O que as pessoas estão dizendo sobre esse ebook
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white rounded-lg p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-[#d2c0a7] flex items-center justify-center text-white font-bold text-xl">
+                            M
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Maria Silva</h4>
+                            <p class="text-sm text-gray-500">Empreendedora</p>
+                        </div>
+                    </div>
+                    <p class="text-[#4a4a4a]">"Este ebook transformou completamente a maneira como eu gerencio meu negócio. Agora tenho clareza e direção!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white rounded-lg p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-[#4a4a4a] flex items-center justify-center text-white font-bold text-xl">
+                            J
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">João Santos</h4>
+                            <p class="text-sm text-gray-500">Microempreendedor</p>
+                        </div>
+                    </div>
+                    <p class="text-[#4a4a4a]">"Finalmente encontrei um guia prático que realmente funciona! Meu faturamento aumentou 30% em apenas dois meses."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white rounded-lg p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-[#2e8b57] flex items-center justify-center text-white font-bold text-xl">
+                            C
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Carla Mendes</h4>
+                            <p class="text-sm text-gray-500">Lojista</p>
+                        </div>
+                    </div>
+                    <p class="text-[#4a4a4a]">"A Senha me ajudou a organizar meu negócio e parar de apagar incêndios. Agora trabalho com mais tranquilidade e resultados."</p>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white rounded-lg p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-[#d2c0a7] flex items-center justify-center text-white font-bold text-xl">
+                            R
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Ricardo Oliveira</h4>
+                            <p class="text-sm text-gray-500">Consultor</p>
+                        </div>
+                    </div>
+                    <p class="text-[#4a4a4a]">"Direto e prático! Exatamente o que eu precisava para dar o próximo passo no meu negócio. Recomendo a todos!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#4a4a4a]">
+                Este ebook é para quem:
+            </h2>
+            
+            <div class="space-y-6">
+                <!-- Feature Item 1 -->
+                <div class="feature-item flex items-start p-4 bg-[#f5f5f5] rounded-lg">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-lg font-medium text-[#4a4a4a]">Tem um negócio com propósito de vida</p>
+                    </div>
+                </div>
+                
+                <!-- Feature Item 2 -->
+                <div class="feature-item flex items-start p-4 bg-[#f5f5f5] rounded-lg">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-lg font-medium text-[#4a4a4a]">Está querendo abrir um negócio mas sente que nunca sai do lugar</p>
+                    </div>
+                </div>
+                
+                <!-- Feature Item 3 -->
+                <div class="feature-item flex items-start p-4 bg-[#f5f5f5] rounded-lg">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-lg font-medium text-[#4a4a4a]">Sabe que tem potencial, mas já tentou de tudo e ainda não conseguiu fazer dar certo</p>
+                    </div>
+                </div>
+                
+                <!-- Feature Item 4 -->
+                <div class="feature-item flex items-start p-4 bg-[#f5f5f5] rounded-lg">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-lg font-medium text-[#4a4a4a]">Não aguenta mais comprar produtos que não ajudam de verdade</p>
+                    </div>
+                </div>
+                
+                <!-- Feature Item 5 -->
+                <div class="feature-item flex items-start p-4 bg-[#f5f5f5] rounded-lg">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-lg font-medium text-[#4a4a4a]">Não sabe por onde começar, mas quer mudanças</p>
+                    </div>
+                </div>
+                
+                <!-- Feature Item 6 -->
+                <div class="feature-item flex items-start p-4 bg-[#f5f5f5] rounded-lg">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-lg font-medium text-[#4a4a4a]">Precisa de um guia prático e claro que ensine o que fazer em seu negócio</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <button class="btn-primary text-lg px-8 py-3 rounded-md font-medium">
+                    Quero Destravar Meu Negócio Agora
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Author Section -->
+    <section class="py-16 bg-[#f5f5f5]">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#4a4a4a]">
+                Sobre a Autora
+            </h2>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <!-- Author Image -->
+                <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                    <div class="relative max-w-md mx-auto md:mx-0">
+                        <img src="imagens/autora.JPG">
+                    </div>
+                </div>
+                
+                <!-- Author Bio -->
+                <div class="w-full md:w-1/2">
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-lg text-[#4a4a4a]">Empresária desde 2012</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-lg text-[#4a4a4a]">Mentora de empreendedores</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-lg text-[#4a4a4a]">Criadora do método GPS para o crescimento</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-lg text-[#4a4a4a]">Jornalista DRT 3367</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-lg text-[#4a4a4a]">MBA em Administração e Marketing</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-lg text-[#4a4a4a]">MBA em Gestão de Recursos Humanos</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-lg text-[#4a4a4a]">Alunos no Brasil e no exterior</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-lg text-[#4a4a4a]">Vive o propósito de Deus em sua vida</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="ml-3 text-lg text-[#4a4a4a]">Alguém que se importa com o outro</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Final CTA Section -->
+    <section class="py-16 bg-[#d2c0a7]">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#4a4a4a]">
+                Pronto para transformar seu negócio?
+            </h2>
+            <p class="text-xl mb-8 text-[#4a4a4a]">
+                Adquira agora "A Senha" e comece a implementar as estratégias que realmente funcionam.
+            </p>
+            <button class="btn-primary text-xl px-10 py-4 rounded-md font-medium">
+                Quero a Senha Agora
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#4a4a4a] text-white py-8">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold">Izidy Râmel</h3>
+                    <p class="mt-2 text-sm text-gray-300">© 2023 Todos os direitos reservados</p>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <!-- Social Media Icons -->
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#d2c0a7] flex items-center justify-center text-[#4a4a4a] hover:bg-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#d2c0a7] flex items-center justify-center text-[#4a4a4a] hover:bg-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#d2c0a7] flex items-center justify-center text-[#4a4a4a] hover:bg-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-6 border-t border-gray-600 text-center text-sm text-gray-400">
+                <p>Este site não é afiliado a nenhuma plataforma específica. Todos os nomes e marcas mencionados pertencem a seus respectivos proprietários.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Add animation to elements when they come into view
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all section headings and feature items
+        document.querySelectorAll('section h2, .feature-item, .testimonial-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
