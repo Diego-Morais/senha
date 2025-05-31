@@ -94,12 +94,21 @@
             <div class="flex flex-col md:flex-row items-center">
                 <!-- Text Content -->
                 <div class="w-full md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-                    <h1 class="text-5xl md:text-6xl font-bold text-[#d2c0a7] animate-fadeIn">A Senha</h1>
-                    <h2 class="text-xl md:text-2xl mt-4 text-white animate-fadeIn delay-100">
+<h1 class="text-5xl md:text-6xl font-bold text-[#d2c0a7] animate-fadeIn text-center md:text-left" style="font-size: 90px;">
+  A <span class="inline-flex items-center gap-[0.1em]">
+    Senha
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mt-[0.05em]">
+      <path d="M12 17a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm6-6h-1V9a5 5 0 0 0-10 0v2H6a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1ZM9 9a3 3 0 0 1 6 0v2H9V9Zm9 11H6v-7h12v7Z"/>
+    </svg>
+  </span>
+</h1>
+
+
+                <h2 class="text-xl md:text-2xl mt-4 text-white animate-fadeIn delay-100">
                         Você está cansado(a) de viver apagando incêndios no seu negócio?
                     </h2>
                     <p class="text-lg mt-6 text-[#d2c0a7] animate-fadeIn delay-200">
-                        Este ebook é um passo a passo direto, sem enrolação — um verdadeiro guia prático para destravar e fazer o seu negócio crescer!
+                        Este e-book revela o que está por trás dos negócios que crescem — e o que falta nos que travam. Um passo a passo direto, sem enrolação, para quem quer abrir um negócio ou destravar o que já tem e fazê-lo crescer de verdade!
                     </p>
                     <button class="btn-primary text-lg px-8 py-3 rounded-md font-medium mt-8 animate-fadeIn delay-300">
                         Quero a Senha
@@ -138,7 +147,7 @@
 
 
     <!-- Testimonials Section -->
-    <section class="py-16 bg-[#d2c0a7]">
+   <section class="py-16 bg-[#d2c0a7]">
     <div class="max-w-6xl mx-auto px-6">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#4a4a4a]">
             O que as pessoas estão dizendo sobre este ebook
@@ -148,9 +157,7 @@
             <!-- Testimonial 1 -->
             <div class="testimonial-card bg-white rounded-lg p-6 shadow-md">
                 <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 rounded-full bg-[#d2c0a7] flex items-center justify-center text-white font-bold text-xl">
-                        M
-                    </div>
+                    <img src="imagens/cliente 01.png" alt="Cliente" class="w-20 h-20 rounded-full object-cover">
                     <div class="ml-4">
                         <h4 class="font-semibold">Maria Silva</h4>
                         <p class="text-sm text-gray-500">Empreendedora</p>
@@ -162,9 +169,7 @@
             <!-- Testimonial 2 -->
             <div class="testimonial-card bg-white rounded-lg p-6 shadow-md">
                 <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 rounded-full bg-[#d2c0a7] flex items-center justify-center text-white font-bold text-xl">
-                        J
-                    </div>
+                    <img src="imagens/cliente 01.png" alt="Cliente" class="w-20 h-20 rounded-full object-cover">
                     <div class="ml-4">
                         <h4 class="font-semibold">Jessiane | @ajessiatelie</h4>
                         <p class="text-sm text-gray-500">Empreendedora</p>
@@ -177,11 +182,9 @@ Este e-book me ajudou a enxergar meu negócio com mais clareza - mesmo sendo ain
             <!-- Testimonial 3 -->
             <div class="testimonial-card bg-white rounded-lg p-6 shadow-md">
                 <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 rounded-full bg-[#d2c0a7] flex items-center justify-center text-white font-bold text-xl">
-                        C
-                    </div>
+                    <img src="imagens/cliente 01.png" alt="Cliente" class="w-20 h-20 rounded-full object-cover">
                     <div class="ml-4">
-                        <h4 class="font-semibold">Igor Pimentel </h4>
+                        <h4 class="font-semibold">Igor Pimentel</h4>
                         <p class="text-sm text-gray-500">Escritor</p>
                     </div>
                 </div>
@@ -193,11 +196,9 @@ Temos experimentado, dia após dia, os resultados de seguir e aplicar cada códi
             <!-- Testimonial 4 -->
             <div class="testimonial-card bg-white rounded-lg p-6 shadow-md">
                 <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 rounded-full bg-[#d2c0a7] flex items-center justify-center text-white font-bold text-xl">
-                        R
-                    </div>
+                    <img src="imagens/cliente 01.png" alt="Cliente" class="w-20 h-20 rounded-full object-cover">
                     <div class="ml-4">
-                        <h4 class="font-semibold">Laércio de Morais </h4>
+                        <h4 class="font-semibold">Laércio de Morais</h4>
                         <p class="text-sm text-gray-500">Empreendedor</p>
                     </div>
                 </div>
@@ -206,6 +207,8 @@ Temos experimentado, dia após dia, os resultados de seguir e aplicar cada códi
         </div>
     </div>
 </section>
+
+
 
 
 
@@ -427,23 +430,22 @@ Temos experimentado, dia após dia, os resultados de seguir e aplicar cada códi
     <!-- Footer -->
     <footer class="bg-[#4a4a4a] text-white py-8">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
+            
                 <div class="mb-6 md:mb-0">
-                    <h3 class="text-xl font-bold">Izidy Râmel</h3>
-                    <p class="mt-2 text-sm text-gray-300">© 2025 Todos os direitos reservados</p>
+                    <h3 class="text-xl font-bold" style="text-align: center;">Izidy Râmel</h3>
+                    <p class="mt-2 text-sm text-gray-300" style="text-align: center;">© 2025 Todos os direitos reservados</p>
                 </div>
-                
-                <div class="flex space-x-4">
-                    <!-- Social Media Icons -->
-                    
-                    <a href="#" class="w-10 h-10 rounded-full bg-[#d2c0a7] flex items-center justify-center text-[#4a4a4a] hover:bg-white transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                    </a>
-                    
-                </div>
-            </div>
+                <br>
+                <div class="flex justify-center">
+  <!-- Social Media Icons -->
+  <a href="#" class="w-10 h-10 rounded-full bg-[#d2c0a7] flex items-center justify-center text-[#4a4a4a] hover:bg-white transition-colors">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+    </svg>
+  </a>
+</div>
+
+           
             
             <div class="mt-8 pt-6 border-t border-gray-600 text-center text-sm text-gray-400">
                 <p>Este site não é afiliado a nenhuma plataforma específica. Todos os nomes e marcas mencionados pertencem a seus respectivos proprietários.</p>
