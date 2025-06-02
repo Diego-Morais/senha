@@ -191,16 +191,17 @@
 </section>
 
 
-    <!-- Testimonials Section -->
-  <section class="py-16 bg-[#d2c0a7]">
+    
+  <!-- Seção de Depoimentos -->
+<section class="py-16 bg-[#d2c0a7]">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#4a4a4a]">
       O que as pessoas estão dizendo sobre este ebook
     </h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      
-      <!-- Testimonial Card -->
+
+      <!-- Jessiane -->
       <div class="testimonial-card bg-white rounded-lg p-6 shadow-md">
         <div class="flex items-center mb-4">
           <div class="w-24 h-24 rounded-full border-4 border-[#d2c0a7] overflow-hidden flex-shrink-0">
@@ -211,11 +212,14 @@
             <p class="text-sm text-gray-500">Empreendedora</p>
           </div>
         </div>
-        <p class="text-[#4a4a4a]">"Izidy foi um presente de Deus em minha vida! [...]"</p>
+        <p class="text-[#4a4a4a]">
+          Izidy foi um presente de Deus em minha vida!
+Este e-book me ajudou a enxergar meu negócio com mais clareza - mesmo sendo ainda pequeno. Ele me mostrou os passos para que eu possa alavancar...
+        </p>
+        <button onclick="openModal('modal1')" class="text-[#a17c50] mt-2 text-sm underline">Continuar lendo</button>
       </div>
 
-      <!-- Repita o mesmo padrão abaixo -->
-
+      <!-- Igor Pimentel -->
       <div class="testimonial-card bg-white rounded-lg p-6 shadow-md">
         <div class="flex items-center mb-4">
           <div class="w-24 h-24 rounded-full border-4 border-[#d2c0a7] overflow-hidden flex-shrink-0">
@@ -226,9 +230,13 @@
             <p class="text-sm text-gray-500">Escritor</p>
           </div>
         </div>
-        <p class="text-[#4a4a4a]">"De fácil compreensão, prático e vivencial [...]"</p>
+        <p class="text-[#4a4a4a]">
+          De fácil compreensão, prático e vivencial — isso é o que você encontrará no e-book “A Senha”. Izidy não colocou apenas palavras, mas o seu próprio coração e entusiasmo em cada página...
+        </p>
+        <button onclick="openModal('modal2')" class="text-[#a17c50] mt-2 text-sm underline">Continuar lendo</button>
       </div>
 
+      <!-- Laércio -->
       <div class="testimonial-card bg-white rounded-lg p-6 shadow-md">
         <div class="flex items-center mb-4">
           <div class="w-24 h-24 rounded-full border-4 border-[#d2c0a7] overflow-hidden flex-shrink-0">
@@ -239,9 +247,13 @@
             <p class="text-sm text-gray-500">Empreendedor</p>
           </div>
         </div>
-        <p class="text-[#4a4a4a]">"Este E-book é sensacional [...]"</p>
+        <p class="text-[#4a4a4a]">
+          Este E-book é sensacional, e mesmo eu, que já tenho um bom tempo que empreendendo, trouxe métodos que eu ainda não utilizava, vale muito a pena adquirir! Amei!
+        </p>
+        
       </div>
 
+      <!-- Priscila -->
       <div class="testimonial-card bg-white rounded-lg p-6 shadow-md">
         <div class="flex items-center mb-4">
           <div class="w-24 h-24 rounded-full border-4 border-[#d2c0a7] overflow-hidden flex-shrink-0">
@@ -252,120 +264,73 @@
             <p class="text-sm text-gray-500">Empreendedora</p>
           </div>
         </div>
-        <p class="text-[#4a4a4a]">"Ótimo livro"</p>
+        <p class="text-[#4a4a4a] line-clamp-3">
+          Ótimo livro. Transformador, com linguagem clara e aplicação prática. Foi um divisor de águas para mim...
+        </p>
+        <button onclick="openModal('modal4')" class="text-[#a17c50] mt-2 text-sm underline">Continuar lendo</button>
       </div>
 
     </div>
   </div>
 </section>
-<div class="mt-8 text-center">
-                <button class="btn-primary text-lg px-8 py-3 rounded-md font-medium">
-                    Eu tabém quero A Senha
-                </button>
-            </div>
+
+<!-- Modais -->
+<div id="modal1" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+  <div class="bg-white rounded-lg p-6 max-w-lg mx-auto">
+    <h3 class="text-xl font-semibold mb-2">Depoimento completo</h3>
+    <p class="text-[#4a4a4a] mb-4">
+      Izidy foi um presente de Deus em minha vida!
+Este e-book me ajudou a enxergar meu negócio com mais clareza - mesmo sendo ainda pequeno. Ele me mostrou os passos para que eu possa alavancar. A forma como os códigos são apresentados torna tudo muito mais leve e prático, mesmo para quem está começando. Ao final de cada código ela ainda oferece um bônus sensacional, o que enriquece ainda mais o nosso conhecimento. Me fez perceber que não basta ter clientes, e sim atrair os clientes certos!
+    </p>
+    <button onclick="closeModal('modal1')" class="bg-[#d2c0a7] text-[#4a4a4a] px-4 py-2 rounded-md font-medium">Voltar</button>
+  </div>
+</div>
+
+<div id="modal2" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+  <div class="bg-white rounded-lg p-6 max-w-lg mx-auto">
+    <h3 class="text-xl font-semibold mb-2">Depoimento completo</h3>
+    <p class="text-[#4a4a4a] mb-4">
+     De fácil compreensão, prático e vivencial — isso é o que você encontrará no e-book “A Senha”. Izidy não colocou apenas palavras, mas o seu próprio coração e entusiasmo em cada página. Temos experimentado, dia após dia, os resultados de seguir e aplicar cada código em nosso empreendimento. Ainda estamos na fase inicial, mas já podemos contabilizar mudanças reais e significativas.
+    </p>
+    <button onclick="closeModal('modal2')" class="bg-[#d2c0a7] text-[#4a4a4a] px-4 py-2 rounded-md font-medium">Voltar</button>
+  </div>
+</div>
 
 
 
+<div id="modal4" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+  <div class="bg-white rounded-lg p-6 max-w-lg mx-auto">
+    <h3 class="text-xl font-semibold mb-2">Depoimento completo</h3>
+    <p class="text-[#4a4a4a] mb-4">
+      Ótimo livro. Transformador, com linguagem clara e aplicação prática. Foi um divisor de águas para mim e meu negócio. Recomendo muito para quem está buscando crescimento real.
+    </p>
+    <button onclick="closeModal('modal4')" class="bg-[#d2c0a7] text-[#4a4a4a] px-4 py-2 rounded-md font-medium">Voltar</button>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script>
+  function openModal(id) {
+    document.getElementById(id).classList.remove('hidden');
+  }
+  function closeModal(id) {
+    document.getElementById(id).classList.add('hidden');
+  }
+</script>
+
+<!-- Tailwind line-clamp plugin (caso ainda não esteja incluído) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/line-clamp@0.4.0"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {} },
+    plugins: [tailwindcssLineClamp],
+  };
+</script>
 
 
 
-
-    <!-- Features Section -->
-    <section class="py-6 bg-white">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#4a4a4a]">
-                Este ebook é para quem:
-            </h2>
-            
-            <div class="space-y-6">
-                <!-- Feature Item 1 -->
-                 <div class="feature-item flex items-start p-4 bg-[#f5f5f5] rounded-lg">
-                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                    <div class="ml-4">
-                        <p class="text-lg font-medium text-[#4a4a4a]">Precisa de um guia prático e claro (passo a passo) que ensine o que fazer em seu negócio.</p>
-                    </div>
-                </div>  
-                 <div class="feature-item flex items-start p-4 bg-[#f5f5f5] rounded-lg">
-                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                    <div class="ml-4">
-                        <p class="text-lg font-medium text-[#4a4a4a]">Não aguenta mais comprar produtos/cursos na internet que não ajudam de verdade.</p>
-                    </div>
-                </div>
-               <div class="feature-item flex items-start p-4 bg-[#f5f5f5] rounded-lg">
-                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                    <div class="ml-4">
-                        <p class="text-lg font-medium text-[#4a4a4a]">Sabe que tem potencial, mas já tentou de tudo e ainda não conseguiu fazer dar certo.</p>
-                    </div>
-                </div>
-                
-                <!-- Feature Item 2 -->
-                <div class="feature-item flex items-start p-4 bg-[#f5f5f5] rounded-lg">
-                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                    <div class="ml-4">
-                        <p class="text-lg font-medium text-[#4a4a4a]">Está querendo abrir um negócio mas se sente perdido/inseguro.</p>
-                    </div>
-                </div>
-                
-                <div class="feature-item flex items-start p-4 bg-[#f5f5f5] rounded-lg">
-                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                    <div class="ml-4">
-                        <p class="text-lg font-medium text-[#4a4a4a]">Não sabe por onde começar, mas quer mudanças.</p>
-                    </div>
-                </div>
-
-                <div class="feature-item flex items-start p-4 bg-[#f5f5f5] rounded-lg">
-                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2e8b57] flex items-center justify-center text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                    <div class="ml-4">
-                        <p class="text-lg font-medium text-[#4a4a4a]">Tem o seu negócio com propósito de vida.</p>
-                    </div>
-                </div> 
-                <!-- Feature Item 3 -->
-                
-                
-                <!-- Feature Item 4 -->
-               
-                
-                <!-- Feature Item 5 -->
-                
-                
-                <!-- Feature Item 6 -->
-                
-            </div>
-            
-            <div class="mt-5 text-center">
-                <button class="btn-primary text-lg px-8 py-3 rounded-md font-medium">
-                    Quero destravar meu negócio agora
-                </button>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- About Author Section -->
+    <!-- Autora -->
     <section class="py-16 bg-[#f5f5f5]">
     <div class="max-w-6xl mx-auto px-6">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#4a4a4a]">
