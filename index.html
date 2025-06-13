@@ -118,6 +118,54 @@
     .shadow-sm {
       box-shadow: 0 1px 2px rgba(0,0,0,0.05);
     }
+
+    .blink-box {
+    text-align: center;
+    border: 2px solid red;
+    border-radius: 5px;
+    width: fit-content;
+    background-color: red;
+    color: white;
+    margin: 20px auto; /* centraliza horizontalmente */
+    padding: 10px 20px;
+    animation: blink 1s infinite;
+    font-weight: bold;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.4;
+    }
+  }
+
+  #btn-primary04 {
+    background-color: #2e8b57; 
+    color: white;
+    font-size: 1.25rem;
+    padding: 1rem 2.5rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    animation: pulse 1.5s infinite;
+    transition: transform 0.2s ease;
+    display: inline-block;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.07);
+    }
+  }
+
+  #btn-primary04:hover {
+    transform: scale(1.1);
+    background-color: #236b43;
+  }
   </style>
 </head>
 
@@ -130,11 +178,18 @@
 </header>
 
 <!-- Hero Section -->
-<section class="hero-gradient pt-0 pb-2 md:py-24">
-  <div class="max-w-6xl mx-auto px-4">
+<section class="hero-gradient pt-0 pb-2 md:py-24 relative overflow-hidden">
+  
+  <!-- Background na lateral direita (somente desktop) -->
+  <div class="hidden md:block absolute inset-0 z-0 bg-no-repeat bg-right bg-cover"
+     style="background-image: url('imagens/imagem 01.png');">
+</div>
+
+  <!-- Conteúdo principal -->
+  <div class="max-w-6xl mx-auto px-4 relative z-10">
     <div class="flex flex-col md:flex-row items-center gap-4">
       
-      <!-- Text Content -->
+      <!-- Texto -->
       <div class="w-full md:w-1/2 text-center md:text-left mb-2 md:mb-0">
         <h1 class="text-4xl md:text-6xl font-bold text-[#d2c0a7] animate-fadeIn text-center md:text-left">
           A 
@@ -159,18 +214,14 @@
         </button>
       </div>
 
-      <!-- Book Cover -->
-      <div class="w-full md:w-1/2 flex justify-center md:justify-end -mt-4 animate-fadeIn delay-400">
-        <div class="relative w-40 md:w-80">
-          <img src="imagens/imagem 02.png" alt="Capa do ebook" style="width: 100%px;">
-        </div>
-      </div>
     </div>
   </div>
 </section>
 
-<strong><h2 style="text-align: center; border: 2px; background-color: red; color: white; margin-top: -8px; ">Em 2 minutos descubra como este e-book vai mudar a sua vida e o seu negócio! &darr;</h2></strong>
 
+<h2 class="blink-box">
+  Descubra como<br>em 2 minutos <span class="arrow-down">⬇️</span>
+</h2>
     <!-- Video Section -->
 <section class="py-2 bg-white">
   <div class="max-w-4xl mx-auto px-6">
@@ -337,6 +388,40 @@ Este e-book me ajudou a enxergar meu negócio com mais clareza - mesmo sendo ain
   };
 </script>
 
+<!-- Seção: Este e-book é para quem -->
+<section class="py-16 bg-[#4a4a4a]">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-white text-center">
+      Este e-book é para quem:
+    </h2>
+    <ul class="text-lg text-white space-y-4 text-left">
+      <li class="flex items-start gap-2">
+        <span class="text-green-400 text-xl">✅</span>
+        <span>Tem seu negócio como propósito de vida.</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="text-green-400 text-xl">✅</span>
+        <span>Está cansado de se sentir perdido(a) e quer um caminho claro.</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="text-green-400 text-xl">✅</span>
+        <span>Deseja crescer com estrutura, e não só com esforço.</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="text-green-400 text-xl">✅</span>
+        <span>Sente que está sempre apagando incêndios e não consegue planejar.</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="text-green-400 text-xl">✅</span>
+        <span>Está começando e quer fazer isso do jeito certo.</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span class="text-green-400 text-xl">✅</span>
+        <span>Já empreende, mas sente que travou.</span>
+      </li>
+    </ul>
+  </div>
+</section>
 
 
     <!-- Autora -->
@@ -457,7 +542,7 @@ Este e-book me ajudou a enxergar meu negócio com mais clareza - mesmo sendo ain
             <p class="text-xl mb-8 text-[#4a4a4a]">
                 Adquira agora <b>A Senha</b> e comece a implementar as estratégias que realmente funcionam.
             </p>
-            <button class="btn-primary text-xl px-10 py-4 rounded-md font-medium">
+            <button class="btn-primary text-xl px-10 py-4 rounded-md font-medium" id="btn-primary04">
                 Quero A Senha agora
             </button>
         </div>
