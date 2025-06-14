@@ -171,12 +171,32 @@
 
   
 
+/* Estilo base compartilhado */
 .garantia-img {
-            margin-top: -250px;
-            margin-bottom: -140px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: -200px;
+  margin-bottom: -150px;
 }
 
+/* Esconde a imagem mobile por padrão */
+.mobile-img {
+  display: none;
+}
 
+/* Mostra a imagem mobile e esconde a desktop em telas até 768px */
+@media (max-width: 768px) {
+  .desktop-img {
+    display: none;
+  }
+
+  .mobile-img {
+    display: block;
+    margin-top: -250px;
+    margin-bottom: -270px;
+  }
+}
   </style>
 </head>
 
@@ -190,18 +210,24 @@
 
 <!-- Hero Section -->
 <section class="hero-gradient relative overflow-hidden min-h-[800px]">
+  <!-- Imagem de fundo para DESKTOP -->
   <div class="hidden md:block absolute inset-0 z-0 bg-no-repeat bg-right bg-cover"
        style="background-image: url('imagens/imagem 01.png');">
   </div>
 
+  <!-- Imagem de fundo para MOBILE -->
+  <div class="block md:hidden absolute inset-0 z-0 bg-no-repeat bg-center bg-cover"
+       style="background-image: url('imagens/inicio mobile.png');">
+  </div>
+
   <!-- Conteúdo principal -->
-  <div class="max-w-6xl mx-auto px-4 relative z-10 min-h-[800px] flex items-center">
+  <div class="max-w-6xl mx-auto px-4 relative z-10 min-h-[800px] flex flex-col justify-start md:flex-row md:items-center pt-16 md:pt-0">
     <div class="flex flex-col md:flex-row items-center gap-4 w-full">
       
       <!-- Texto -->
       <div class="w-full md:w-1/2 text-center md:text-left mb-2 md:mb-0">
         <h1 class="text-4xl md:text-6xl font-bold text-[#d2c0a7] animate-fadeIn text-center md:text-left">
-          <span class="inline-flex items-center gap-[0.0em] pt-16">
+          <span class="inline-flex items-center gap-[0.0em] pt-0 md:pt-16">
             A Senha
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" class="mt-[-0.1em]">
               <path d="M12 17a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm6-6h-1V9a5 5 0 0 0-10 0v2H6a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1ZM9 9a3 3 0 0 1 6 0v2H9V9Zm9 11H6v-7h12v7Z"/>
@@ -217,7 +243,8 @@
           Este e-book revela o que está por trás dos negócios que crescem — e o que falta nos que travam. Um passo a passo direto, sem enrolação, para quem já tem um negócio e deseja fazê-lo crescer de verdade e para quem quer começar um! 
         </p>
 
-        <button class="btn-primary text-base px-6 py-3 rounded-md font-medium mt-2 animate-fadeIn delay-300">
+        <!-- Botão visível apenas em telas médias para cima -->
+        <button class="hidden md:inline-block btn-primary text-base px-6 py-3 rounded-md font-medium mt-2 animate-fadeIn delay-300">
           Quero A Senha
         </button>
       </div>
@@ -438,13 +465,15 @@ Este e-book me ajudou a enxergar meu negócio com mais clareza - mesmo sendo ain
 
 <br>
 <section class="py-16">
- <!--Garantia-->
-    <div class="img-garantia">
-      <img src="imagens/imagem 03.png" class="garantia-img" alt="Imagem Garantia">
-    </div>
-    
-  </section>
+  <!-- Garantia -->
+  <div class="img-garantia">
+    <!-- Imagem padrão (desktop) -->
+    <img src="imagens/imagem 03.png" class="garantia-img desktop-img" alt="Imagem Garantia Desktop">
 
+    <!-- Imagem para celular -->
+    <img src="imagens/imagem 04.png" class="garantia-img mobile-img" alt="Imagem Garantia Mobile">
+  </div>
+</section>
     <!-- Autora -->
     <section class="py-16 bg-[#f5f5f5]">
     <div class="max-w-6xl mx-auto px-6">
@@ -556,33 +585,26 @@ Este e-book me ajudou a enxergar meu negócio com mais clareza - mesmo sendo ain
 
     <!-- Final CTA Section -->
     <section class="py-8 bg-[#d2c0a7]">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#4a4a4a]">
-                Vamos para o seu próximo nível?
-            </h2>
-            <p class="text-xl mb-8 text-[#4a4a4a]">
-                Adquira agora <b>A Senha</b> e comece a implementar as estratégias que realmente funcionam, assim como tantas outras pessoas já fizeram!
-            </p>
-             <p class="text-xl mb-8 text-[#4a4a4a]">
-                <s style="color:red;" >De R$ 137,90</s> 
-        
-            </p>
-            <p class="text-xl mb-8 text-[#4a4a4a]">
-                Por R$ 67,90 
-        
-            </p>
-            <p class="text-xl mb-8 text-[#4a4a4a]">
-                ou
-            </p>
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#4a4a4a]">
+      Vamos para o seu próximo nível?
+    </h2>
+    <p class="text-xl mb-6 text-[#4a4a4a]">
+      Adquira agora <b>A Senha</b> e comece a implementar as estratégias que realmente funcionam, assim como tantas outras pessoas já fizeram!
+    </p>
 
-             <p class="text-xl mb-8 text-[#4a4a4a]">
-            10 x R$ 6,79
-            </p>
-            <button class="btn-primary text-xl px-10 py-4 rounded-md font-medium" id="btn-primary04">
-                Quero aproveitar<br> esta oportunidade!
-            </button>
-        </div>
-    </section>
+    <div class="text-xl text-[#4a4a4a] mb-6">
+      <p class="mb-2"><s style="color:red;">De R$ 137,90</s></p>
+      <p class="mb-1">Por R$ 67,90</p>
+      <p class="mb-1">ou</p>
+      <p>10 x R$ 6,79</p>
+    </div>
+
+    <button class="btn-primary text-xl px-10 py-4 rounded-md font-medium" id="btn-primary04">
+      Quero aproveitar<br> esta oportunidade!
+    </button>
+  </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-[#4a4a4a] text-white py-8">
